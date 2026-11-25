@@ -652,7 +652,7 @@ UIViewController *YTKACEMakeDownloadLogController(void) {
     }
 
     UITableViewCell *cell = [self baseCellForTableView:tableView style:UITableViewCellStyleValue1];
-    cell.textLabel.text = YTKACELocalized(@"itzzace");
+    cell.textLabel.text = YTKACELocalized(@"Cavvoh");
     cell.detailTextLabel.text = @"YTKACE";
     cell.imageView.image = YTKACEAssetImage(@"YTKIco", @"person.crop.circle");
     cell.selectionStyle = UITableViewCellSelectionStyleDefault;
@@ -670,7 +670,7 @@ UIViewController *YTKACEMakeDownloadLogController(void) {
     NSArray *menu = YTKACESettingsMenu();
     if (indexPath.section >= (NSInteger)menu.count) {
         if (indexPath.row != 0) return;
-        NSURL *URL = [NSURL URLWithString:@"https://github.com/itzzace/ytkace"];
+        NSURL *URL = [NSURL URLWithString:@"https://github.com/cavvoh/ytkace"];
         [UIApplication.sharedApplication openURL:URL options:@{}
                                completionHandler:nil];
         return;
